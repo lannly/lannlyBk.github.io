@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Blog, hexo" />
+  <meta name="keywords" content="hexo,next主题,多说,评论" />
 
 
 
@@ -84,16 +84,19 @@
 
 
 
-<meta name="description" content="js中字符截取函数有常用的三个slice()、substring()、substr();">
+<meta name="description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js截取字符串">
-<meta property="og:url" content="http://yoursite.com/2016/10/31/js截取字符串/index.html">
+<meta property="og:title" content="Hexo+Next 添加多说评论">
+<meta property="og:url" content="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/index.html">
 <meta property="og:site_name" content="lann's Blog">
-<meta property="og:description" content="js中字符截取函数有常用的三个slice()、substring()、substr();">
-<meta property="og:updated_time" content="2016-11-10T05:56:33.389Z">
+<meta property="og:description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
+<meta property="og:image" content="http://yoursite.com/img/duoshuozhandian.png">
+<meta property="og:image" content="http://yoursite.com/img/duoshuo.png">
+<meta property="og:updated_time" content="2016-11-11T06:50:17.068Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js截取字符串">
-<meta name="twitter:description" content="js中字符截取函数有常用的三个slice()、substring()、substr();">
+<meta name="twitter:title" content="Hexo+Next 添加多说评论">
+<meta name="twitter:description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
+<meta name="twitter:image" content="http://yoursite.com/img/duoshuozhandian.png">
 
 
 
@@ -114,10 +117,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/31/js截取字符串/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"/>
 
 
-  <title> js截取字符串 | lann's Blog </title>
+  <title> Hexo+Next 添加多说评论 | lann's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -257,7 +260,7 @@
             
             
               
-                js截取字符串
+                Hexo+Next 添加多说评论
               
             
           </h1>
@@ -269,8 +272,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-31T15:05:42+08:00" content="2016-10-31">
-              2016-10-31
+            <time itemprop="dateCreated" datetime="2016-11-11T13:16:15+08:00" content="2016-11-11">
+              2016-11-11
             </time>
           </span>
 
@@ -283,8 +286,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
                   </a>
                 </span>
 
@@ -299,8 +302,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/31/js截取字符串/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/js截取字符串/" itemprop="commentsCount"></span>
+                <a href="/2016/11/11/Hexo-Next-添加多说评论/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/11/Hexo-Next-添加多说评论/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -328,12 +331,17 @@
       
 
       
-        <p>在js中字符截取函数有常用的三个slice()、substring()、substr()<br>    <code>slice(start,[end])</code> <code>substring(start,[end])</code>和 <code>substr(start,[length])</code></p>
-<h4 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h4><p>第一个参数代表开始位置,第二个参数代表结束位置的下一个位置,截取出来的字符串的长度为第二个参数与第一个参数之间的差;<br>若第二个参数值为负数,则将该值加上字符串长度后转为正值;<br>若第一个参数等于大于第二个参数,则返回空字符串.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"0123456789"</span>;</div><div class="line">alert(str.slice(<span class="number">0</span>))   <span class="comment">//返回整个字符串(从第1个字符开始,截取到最后个字符);返回"3456789"</span></div><div class="line">alert(str.slice(<span class="number">3</span>))   <span class="comment">//从第4个字符开始,截取到最后个字符; 返回"3456789"</span></div><div class="line">alert(str.slice(<span class="number">3</span>,<span class="number">7</span>))   <span class="comment">//从第4个字符开始，到第7个字符  输出"3456"</span></div><div class="line">alert(str.slice(<span class="number">3</span>,<span class="number">-3</span>))   <span class="comment">//从第4个字符开始，到第7个字符  输出"3456"</span></div><div class="line">alert(str.slice(<span class="number">5</span>,<span class="number">1</span>)); <span class="comment">// 弹出第6个到第8个 返回"空字符串" ps:第一个参数等于大于第二个参数,则返回空字符串.</span></div></pre></td></tr></table></figure></p>
-<h4 id="substring"><a href="#substring" class="headerlink" title="substring()"></a>substring()</h4><p>第一个参数代表开始位置,第二个参数代表结束位置的下一个位置;<br><code>若2个参数都为正数时，substring()语法与slice()一致</code><br>若参数值为负数,则将该值转为0;两个参数中,取较小值作为开始位置，截取出来的字符串的长度为较大值与较小值之间的差.<br><code>例如：substring(2,-5)实际上是substring(2,0),负数转换为0,substring总是把较小的数作为起始位置。即输出从下标为1到第二个</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"0123456789"</span>;  <span class="comment">//长度为10</span></div><div class="line">alert(str.substring(<span class="number">0</span>)); <span class="comment">// 弹出全部字符串 输出"0123456789"</span></div><div class="line">alert(str.substring(<span class="number">0</span>,<span class="number">2</span>)); <span class="comment">// 弹出第一个到第二个  输出"01"</span></div><div class="line">alert(str.substring(<span class="number">5</span>,<span class="number">8</span>)); <span class="comment">// 弹出第6个到第8个 输出"567"</span></div><div class="line">alert(str.substring(<span class="number">5</span>,<span class="number">20</span>)); <span class="comment">// 弹出第6个到最后一个 输出"56789",ps:最后一个数大于长度</span></div><div class="line">alert(str.substring(<span class="number">5</span>,<span class="number">1</span>)); <span class="comment">// 弹出第2个到第5个 输出"1234"   ps:若第一个参数等于大于第二个参数,substring总是把较小的数作为起始位置.</span></div><div class="line">alert(str.substring(<span class="number">5</span>,<span class="number">7</span>)); <span class="comment">// 弹出第6个到第7个 输出"56"</span></div><div class="line">alert(str.substring(<span class="number">5</span>,<span class="number">-3</span>)); <span class="comment">// 此例子中等价于 alert(str.substring(5,0));   输出"01234"</span></div></pre></td></tr></table></figure></p>
-<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>第一个参数代表开始位置,第二个参数代表截取的长度<br>PS：字符串都从0开始计起<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"0123456789"</span>;</div><div class="line">alert(str.substr(<span class="number">0</span>))   <span class="comment">//返回整个字符串(从第1个字符开始,截取到最后个字符); 返回"3456789"</span></div><div class="line">alert(str.substr(<span class="number">3</span>))   <span class="comment">//从第4个字符开始,截取到最后个字符;返回"3456789"</span></div><div class="line">alert(str.substr(<span class="number">3</span>,<span class="number">5</span>))   <span class="comment">//从第4个字符开始，输出长度为7个字符。输出"34567"</span></div><div class="line">alert(str.substr(<span class="number">3</span>,<span class="number">9</span>))   <span class="comment">//从第4个字符开始，输出长度为7个字符。输出"3456789"</span></div><div class="line">alert(str.substr(<span class="number">3</span>,<span class="number">-3</span>))   <span class="comment">//从第4个字符开始，到第7个字符输出"3456"</span></div></pre></td></tr></table></figure></p>
-<hr>
-<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><h4 id="split"><a href="#split" class="headerlink" title="split()"></a>split()</h4>
+        <ol>
+<li>Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入<a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a>注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“<a href="http://duoshuo.com/create-site”" target="_blank" rel="external">http://duoshuo.com/create-site”</a> 创建站点 <code>ps:该入口有点难找，记录一下</code>，如下图（我的多说创建过程:新建站点时会创建多说域名：<a href="http://lannly.duoshuo.com" target="_blank" rel="external">http://lannly.duoshuo.com</a> ,其中lannly为配置文件_config.yml中duoshuo_shortname字段的值）：<br><img src="/img/duoshuozhandian.png" alt="创建站点"><br>2.打开站点配置文件（_config.yml）中新增 duoshuo_shortname 字段，值设置成上一步中的值。<br>duoshuo_shortname: lannly</li>
+<li><p>修改themes\next\layout\ _partial\archive.swig 模板<br> 把</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&#123;% if page.comments %&#125;</div><div class="line">  &lt;div class=&quot;comments&quot; id=&quot;comments&quot;&gt;</div><div class="line">    &#123;% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %&#125;</div><div class="line">      &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&#123;&#123; page.path &#125;&#125;&quot; data-title=&quot;&#123;&#123; page.title &#125;&#125;&quot; data-url=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">    &#123;% elseif theme.facebook_sdk.enable and theme.facebook_comments_plugin.enable %&#125;</div><div class="line">      &lt;div class=&quot;fb-comments&quot;</div><div class="line">           data-href=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;</div><div class="line">           data-numposts=&quot;&#123;&#123; theme.facebook_comments_plugin.num_of_posts &#125;&#125;&quot;</div><div class="line">           data-width=&quot;&#123;&#123; theme.facebook_comments_plugin.width &#125;&#125;&quot;</div><div class="line">           data-colorscheme=&quot;&#123;&#123; theme.facebook_comments_plugin.scheme &#125;&#125;&quot;&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% elseif theme.disqus_shortname %&#125;</div><div class="line">      &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">        &lt;noscript&gt;</div><div class="line">          Please enable JavaScript to view the</div><div class="line">          &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;</div><div class="line">        &lt;/noscript&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% endif %&#125;</div><div class="line">  &lt;/div&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure>
+<p> 改成</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">	&#123;% if page.comments %&#125;</div><div class="line">  &lt;div class=&quot;comments&quot; id=&quot;comments&quot;&gt;</div><div class="line">    &#123;% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %&#125;</div><div class="line">      &lt;!--&lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;请将此处替换成文章在你的站点中的ID&quot; data-title=&quot;请替换成文章的标题&quot; data-url=&quot;请替换成文章的网址&quot;&gt;&lt;/div&gt;--&gt;</div><div class="line">      &lt;!-- 多说评论框 start --&gt;</div><div class="line">      &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&#123;&#123; page.path &#125;&#125;&quot; data-title=&quot;&#123;&#123; page.title &#125;&#125;&quot; data-url=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;&gt;&lt;/div&gt;</div><div class="line">      &lt;!-- 多说评论框 end --&gt;</div><div class="line">      &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">      &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">      var duoshuoQuery = &#123;short_name:&quot;lannly&quot;&#125;; &lt;!--这里的lannly 改成你自己站点的short_name--&gt;</div><div class="line">        (function() &#123;</div><div class="line">          var ds = document.createElement(&apos;script&apos;);</div><div class="line">          ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">          ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line">          ds.charset = &apos;UTF-8&apos;;</div><div class="line">          (document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line">           || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line">        &#125;)();</div><div class="line">        &lt;/script&gt;</div><div class="line">      &lt;!-- 多说公共JS代码 end --&gt;</div><div class="line"></div><div class="line">    &#123;% elseif theme.facebook_sdk.enable and theme.facebook_comments_plugin.enable %&#125;</div><div class="line">      &lt;div class=&quot;fb-comments&quot;</div><div class="line">           data-href=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;</div><div class="line">           data-numposts=&quot;&#123;&#123; theme.facebook_comments_plugin.num_of_posts &#125;&#125;&quot;</div><div class="line">           data-width=&quot;&#123;&#123; theme.facebook_comments_plugin.width &#125;&#125;&quot;</div><div class="line">           data-colorscheme=&quot;&#123;&#123; theme.facebook_comments_plugin.scheme &#125;&#125;&quot;&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% elseif theme.disqus_shortname %&#125;</div><div class="line">      &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">        &lt;noscript&gt;</div><div class="line">          Please enable JavaScript to view the</div><div class="line">          &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;</div><div class="line">        &lt;/noscript&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% endif %&#125;</div><div class="line">  &lt;/div&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><code>上面两段的不同即为下图中的红色区域，替换即可</code><br><img src="/img/duoshuo.png" alt="创建站点"></p>
+<p>over~</p>
+
       
     </div>
 
@@ -355,7 +363,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/笔记/" rel="tag">#笔记</a>
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+            <a href="/tags/多说/" rel="tag">#多说</a>
           
         </div>
       
@@ -364,17 +374,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/31/移动端touch事件/" rel="next" title="移动端touch事件">
-                <i class="fa fa-chevron-left"></i> 移动端touch事件
+              <a href="/2016/11/11/hexo-next主题-文章添加阅读次数，访问量等/" rel="next" title="Hexo+Next主题 文章添加阅读次数，访问量等">
+                <i class="fa fa-chevron-left"></i> Hexo+Next主题 文章添加阅读次数，访问量等
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/31/书单/" rel="prev" title="书单">
-                书单 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -402,7 +408,7 @@
     
       <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
       <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="2016/10/31/js截取字符串/" data-title="js截取字符串" data-url="http://yoursite.com/2016/10/31/js截取字符串/"></div>
+      <div class="ds-thread" data-thread-key="2016/11/11/Hexo-Next-添加多说评论/" data-title="Hexo+Next 添加多说评论" data-url="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
       <script type="text/javascript">
@@ -550,7 +556,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#slice"><span class="nav-number">1.</span> <span class="nav-text">slice()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#substring"><span class="nav-number">2.</span> <span class="nav-text">substring()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#substr"><span class="nav-number">3.</span> <span class="nav-text">substr()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展"><span class="nav-number"></span> <span class="nav-text">扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#split"><span class="nav-number">1.</span> <span class="nav-text">split()</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
