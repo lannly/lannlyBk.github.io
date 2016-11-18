@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,next主题,多说,评论" />
+  <meta name="keywords" content="hexo,next主题,菜单" />
 
 
 
@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
+<meta name="description" content="下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Next 添加多说评论">
-<meta property="og:url" content="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/index.html">
+<meta property="og:title" content="Hexo+Next 添加菜单分类">
+<meta property="og:url" content="http://yoursite.com/2016/11/16/Hexo-Next-添加菜单分类/index.html">
 <meta property="og:site_name" content="lann's Blog">
-<meta property="og:description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
-<meta property="og:image" content="http://yoursite.com/img/duoshuozhandian.png">
-<meta property="og:image" content="http://yoursite.com/img/duoshuo.png">
-<meta property="og:updated_time" content="2016-11-11T08:25:56.224Z">
+<meta property="og:description" content="下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;">
+<meta property="og:image" content="http://yoursite.com/img/works.png">
+<meta property="og:image" content="http://yoursite.com/img/zhhans.png">
+<meta property="og:updated_time" content="2016-11-17T06:09:40.419Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Next 添加多说评论">
-<meta name="twitter:description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
-<meta name="twitter:image" content="http://yoursite.com/img/duoshuozhandian.png">
+<meta name="twitter:title" content="Hexo+Next 添加菜单分类">
+<meta name="twitter:description" content="下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;">
+<meta name="twitter:image" content="http://yoursite.com/img/works.png">
 
 
 
@@ -117,10 +117,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/16/Hexo-Next-添加菜单分类/"/>
 
 
-  <title> Hexo+Next 添加多说评论 | lann's Blog </title>
+  <title> Hexo+Next 添加菜单分类 | lann's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -270,7 +270,7 @@
             
             
               
-                Hexo+Next 添加多说评论
+                Hexo+Next 添加菜单分类
               
             
           </h1>
@@ -282,8 +282,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-11T13:16:15+08:00" content="2016-11-11">
-              2016-11-11
+            <time itemprop="dateCreated" datetime="2016-11-16T13:38:43+08:00" content="2016-11-16">
+              2016-11-16
             </time>
           </span>
 
@@ -312,8 +312,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/11/Hexo-Next-添加多说评论/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/11/Hexo-Next-添加多说评论/" itemprop="commentsCount"></span>
+                <a href="/2016/11/16/Hexo-Next-添加菜单分类/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/16/Hexo-Next-添加菜单分类/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -341,15 +341,27 @@
       
 
       
-        <ol>
-<li>Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入<a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a>注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“<a href="http://duoshuo.com/create-site”" target="_blank" rel="external">http://duoshuo.com/create-site”</a> 创建站点 <code>ps:该入口有点难找，记录一下</code>，如下图（我的多说创建过程:新建站点时会创建多说域名：<a href="http://lannly.duoshuo.com" target="_blank" rel="external">http://lannly.duoshuo.com</a> ,其中lannly为配置文件_config.yml中duoshuo_shortname字段的值）：<br><img src="/img/duoshuozhandian.png" alt="创建站点"><br>2.打开站点配置文件（_config.yml）中新增 duoshuo_shortname 字段，值设置成上一步中的值。<br>duoshuo_shortname: lannly</li>
-<li><p>修改themes\next\layout\ _partial\archive.swig 模板<br> 把</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&#123;% if page.comments %&#125;</div><div class="line">  &lt;div class=&quot;comments&quot; id=&quot;comments&quot;&gt;</div><div class="line">    &#123;% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %&#125;</div><div class="line">      &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&#123;&#123; page.path &#125;&#125;&quot; data-title=&quot;&#123;&#123; page.title &#125;&#125;&quot; data-url=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">    &#123;% elseif theme.facebook_sdk.enable and theme.facebook_comments_plugin.enable %&#125;</div><div class="line">      &lt;div class=&quot;fb-comments&quot;</div><div class="line">           data-href=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;</div><div class="line">           data-numposts=&quot;&#123;&#123; theme.facebook_comments_plugin.num_of_posts &#125;&#125;&quot;</div><div class="line">           data-width=&quot;&#123;&#123; theme.facebook_comments_plugin.width &#125;&#125;&quot;</div><div class="line">           data-colorscheme=&quot;&#123;&#123; theme.facebook_comments_plugin.scheme &#125;&#125;&quot;&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% elseif theme.disqus_shortname %&#125;</div><div class="line">      &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">        &lt;noscript&gt;</div><div class="line">          Please enable JavaScript to view the</div><div class="line">          &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;</div><div class="line">        &lt;/noscript&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% endif %&#125;</div><div class="line">  &lt;/div&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure>
-<p> 改成</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">	&#123;% if page.comments %&#125;</div><div class="line">  &lt;div class=&quot;comments&quot; id=&quot;comments&quot;&gt;</div><div class="line">    &#123;% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %&#125;</div><div class="line">      &lt;!--&lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;请将此处替换成文章在你的站点中的ID&quot; data-title=&quot;请替换成文章的标题&quot; data-url=&quot;请替换成文章的网址&quot;&gt;&lt;/div&gt;--&gt;</div><div class="line">      &lt;!-- 多说评论框 start --&gt;</div><div class="line">      &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&#123;&#123; page.path &#125;&#125;&quot; data-title=&quot;&#123;&#123; page.title &#125;&#125;&quot; data-url=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;&gt;&lt;/div&gt;</div><div class="line">      &lt;!-- 多说评论框 end --&gt;</div><div class="line">      &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">      &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">      var duoshuoQuery = &#123;short_name:&quot;lannly&quot;&#125;; &lt;!--这里的lannly 改成你自己站点的short_name--&gt;</div><div class="line">        (function() &#123;</div><div class="line">          var ds = document.createElement(&apos;script&apos;);</div><div class="line">          ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">          ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line">          ds.charset = &apos;UTF-8&apos;;</div><div class="line">          (document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line">           || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line">        &#125;)();</div><div class="line">        &lt;/script&gt;</div><div class="line">      &lt;!-- 多说公共JS代码 end --&gt;</div><div class="line"></div><div class="line">    &#123;% elseif theme.facebook_sdk.enable and theme.facebook_comments_plugin.enable %&#125;</div><div class="line">      &lt;div class=&quot;fb-comments&quot;</div><div class="line">           data-href=&quot;&#123;&#123; page.permalink &#125;&#125;&quot;</div><div class="line">           data-numposts=&quot;&#123;&#123; theme.facebook_comments_plugin.num_of_posts &#125;&#125;&quot;</div><div class="line">           data-width=&quot;&#123;&#123; theme.facebook_comments_plugin.width &#125;&#125;&quot;</div><div class="line">           data-colorscheme=&quot;&#123;&#123; theme.facebook_comments_plugin.scheme &#125;&#125;&quot;&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% elseif theme.disqus_shortname %&#125;</div><div class="line">      &lt;div id=&quot;disqus_thread&quot;&gt;</div><div class="line">        &lt;noscript&gt;</div><div class="line">          Please enable JavaScript to view the</div><div class="line">          &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;</div><div class="line">        &lt;/noscript&gt;</div><div class="line">      &lt;/div&gt;</div><div class="line">    &#123;% endif %&#125;</div><div class="line">  &lt;/div&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure>
-</li>
+        <p>下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;</p>
+<blockquote>
+<p>默认的有：首页，归档，分类，标签，关于, 但是next主题默认只显示了首页 归档和标签。</p>
+</blockquote>
+<h4 id="生成-关于我-默认已有的分类"><a href="#生成-关于我-默认已有的分类" class="headerlink" title="生成 关于我 (默认已有的分类)"></a>生成 关于我 (默认已有的分类)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"about"</span></div><div class="line">//在 hexo &gt; <span class="built_in">source</span> 文件夹中会出现一个about文件夹</div></pre></td></tr></table></figure>
+<h4 id="生成-分类-默认已有的分类"><a href="#生成-分类-默认已有的分类" class="headerlink" title="生成 分类 (默认已有的分类)"></a>生成 分类 (默认已有的分类)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"categories"</span></div></pre></td></tr></table></figure>
+<p>步骤：</p>
+<ol>
+<li>新建page: $ hexo new page “categories” ，在 hexo &gt; source 文件夹中会出现一个categories文件夹</li>
+<li>打开categories文件夹中的index.md页面，在头部添加 – type: “categories” （为了点击的时候链接生效）</li>
+<li>在hexo &gt; theme &gt; next &gt; _config.yml 中修改menu下的categorues,去掉前面井号注释。</li>
 </ol>
-<p><code>上面两段的不同即为下图中的红色区域，替换即可</code><br><img src="/img/duoshuo.png" alt="创建站点"></p>
+<h4 id="生成-作品-默认没有此分类"><a href="#生成-作品-默认没有此分类" class="headerlink" title="生成 作品 (默认没有此分类)"></a>生成 作品 (默认没有此分类)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"works"</span></div></pre></td></tr></table></figure>
+<p>步骤：</p>
+<ol>
+<li>新建page: $ hexo new page “works” ，在 hexo &gt; source 文件夹中会出现一个categories文件夹</li>
+<li>在hexo &gt; theme &gt; next &gt; _config.yml 中menu下添加       — works: /works  </li>
+<li>在hexo &gt; theme &gt; next &gt; _config.yml 中menu_icons下添加 —   works: book  (ps:2,3步骤如下图)<br><img src="/img/works.png" alt="添加菜单：作品"></li>
+<li>新添加的菜单需要翻译对应的汉字，打开 hexo　&gt; theme &gt; next &gt; languages &gt; zh-Hans.yml , 在menu下添加–  works: 作品,如下图：<br><img src="/img/zhhans.png" alt="添加菜单：作品中文翻译"></li>
+</ol>
+<p>That’s all~</p>
 
       
     </div>
@@ -374,7 +386,7 @@
           
             <a href="/tags/hexo/" rel="tag">#hexo</a>
           
-            <a href="/tags/多说/" rel="tag">#多说</a>
+            <a href="/tags/菜单/" rel="tag">#菜单</a>
           
         </div>
       
@@ -383,16 +395,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/11/hexo-next主题-文章添加阅读次数，访问量等/" rel="next" title="Hexo+Next主题 文章添加阅读次数，访问量等">
-                <i class="fa fa-chevron-left"></i> Hexo+Next主题 文章添加阅读次数，访问量等
+              <a href="/2016/11/11/Hexo-Next-添加多说评论/" rel="next" title="Hexo+Next 添加多说评论">
+                <i class="fa fa-chevron-left"></i> Hexo+Next 添加多说评论
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/16/Hexo-Next-添加菜单分类/" rel="prev" title="Hexo+Next 添加菜单分类">
-                Hexo+Next 添加菜单分类 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/16/常用表单验证/" rel="prev" title="常用表单验证">
+                常用表单验证 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -421,7 +433,7 @@
     
       <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
       <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="2016/11/11/Hexo-Next-添加多说评论/" data-title="Hexo+Next 添加多说评论" data-url="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"></div>
+      <div class="ds-thread" data-thread-key="2016/11/16/Hexo-Next-添加菜单分类/" data-title="Hexo+Next 添加菜单分类" data-url="http://yoursite.com/2016/11/16/Hexo-Next-添加菜单分类/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
       <script type="text/javascript">
@@ -569,7 +581,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成-关于我-默认已有的分类"><span class="nav-number">1.</span> <span class="nav-text">生成 关于我 (默认已有的分类)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成-分类-默认已有的分类"><span class="nav-number">2.</span> <span class="nav-text">生成 分类 (默认已有的分类)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成-作品-默认没有此分类"><span class="nav-number">3.</span> <span class="nav-text">生成 作品 (默认没有此分类)</span></a></li></ol></div>
             
           </div>
         </section>

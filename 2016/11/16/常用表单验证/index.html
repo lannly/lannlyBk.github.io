@@ -1,0 +1,732 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="表单验证" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="下文主要是一些常用的表单验证,积累;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用表单验证">
+<meta property="og:url" content="http://yoursite.com/2016/11/16/常用表单验证/index.html">
+<meta property="og:site_name" content="lann's Blog">
+<meta property="og:description" content="下文主要是一些常用的表单验证,积累;">
+<meta property="og:updated_time" content="2016-11-16T07:06:11.495Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="常用表单验证">
+<meta name="twitter:description" content="下文主要是一些常用的表单验证,积累;">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6346854473696019000',
+      author: '主编大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/16/常用表单验证/"/>
+
+
+  <title> 常用表单验证 | lann's Blog </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">lann's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">欲戴皇冠，必承其重</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-works">
+          <a href="/works" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            作品
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                常用表单验证
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-16T13:39:42+08:00" content="2016-11-16">
+              2016-11-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/16/常用表单验证/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/16/常用表单验证/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-eye"></i> 浏览
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>下文主要是一些常用的表单验证,积累~</p>
+<h3 id="判断是否为空"><a href="#判断是否为空" class="headerlink" title="/判断是否为空/"></a>/<strong>判断是否为空</strong>/</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**判断是否为空**/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBlank</span>(<span class="params">_value</span>)</span>&#123;</div><div class="line"><span class="keyword">if</span>(_value==<span class="literal">null</span> || _value==<span class="string">""</span> || _value==<span class="literal">undefined</span>)&#123;</div><div class="line"><span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">   &#125;</div><div class="line"><span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="验证邮箱"><a href="#验证邮箱" class="headerlink" title="/ 验证邮箱 /"></a>/<strong> 验证邮箱 </strong>/</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/** 验证邮箱  **/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">validateEmailFiled</span>(<span class="params">obj,param,description</span>)</span>&#123;</div><div class="line"><span class="keyword">if</span>(param.errorCount == <span class="number">0</span> &amp;&amp; obj.val().length &gt; <span class="number">0</span>)&#123;</div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]&#123;2,3&#125;)&#123;1,2&#125;)$/</span>;</div><div class="line"><span class="keyword">if</span>(!reg.test(obj.val()))&#123;</div><div class="line">            param.errorCount =  param.errorCount + <span class="number">1</span>;</div><div class="line">floatNotify.simple(description);</div><div class="line">          &#125;</div><div class="line">      &#125;<span class="keyword">else</span>&#123;</div><div class="line">         param.errorCount =  param.errorCount + <span class="number">1</span>;</div><div class="line">floatNotify.simple(description);</div><div class="line">      &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="验证手机"><a href="#验证手机" class="headerlink" title="验证手机"></a>验证手机</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/** 验证手机  **/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">validateMobileFiled</span>(<span class="params">obj,param,description</span>)</span>&#123;</div><div class="line"><span class="keyword">if</span>(param.errorCount == <span class="number">0</span>)&#123;</div><div class="line"><span class="comment">//验证电话号码手机号码，包含至今所有号段   </span></div><div class="line">         <span class="keyword">var</span> reg=<span class="regexp">/^1\d&#123;10&#125;$/</span>;</div><div class="line"><span class="keyword">if</span>(!reg.test(obj.val()))&#123;</div><div class="line">            param.errorCount =  param.errorCount + <span class="number">1</span>;</div><div class="line">floatNotify.simple(description);</div><div class="line">         &#125;</div><div class="line">      &#125; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="身份证验证-idcardCheck-js"><a href="#身份证验证-idcardCheck-js" class="headerlink" title="身份证验证 //idcardCheck.js"></a>身份证验证 //idcardCheck.js</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div></pre></td><td class="code"><pre><div class="line">var Wi = [ 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1 ];    // 加权因子   </div><div class="line">var ValideCode = [ 1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2 ];            // 身份证验证位值.10代表X   </div><div class="line">function IdCardValidate(idCard) &#123; </div><div class="line">    idCard = trim(idCard.replace(/ /g, &quot;&quot;));               //去掉字符串头尾空格                     </div><div class="line">    if (idCard.length == 15) &#123;   </div><div class="line">        return isValidityBrithBy15IdCard(idCard);       //进行15位身份证的验证    </div><div class="line">    &#125; else if (idCard.length == 18) &#123;   </div><div class="line">        var a_idCard = idCard.split(&quot;&quot;);                // 得到身份证数组   </div><div class="line">        if(isValidityBrithBy18IdCard(idCard)&amp;&amp;isTrueValidateCodeBy18IdCard(a_idCard))&#123;   //进行18位身份证的基本验证和第18位的验证</div><div class="line">            return true;   </div><div class="line">        &#125;else &#123;   </div><div class="line">            return false;   </div><div class="line">        &#125;   </div><div class="line">    &#125; else &#123;   </div><div class="line">        return false;   </div><div class="line">    &#125;   </div><div class="line">&#125;   </div><div class="line">/**  </div><div class="line"> * 判断身份证号码为18位时最后的验证位是否正确  </div><div class="line"> * @param a_idCard 身份证号码数组  </div><div class="line"> * @return  </div><div class="line"> */  </div><div class="line">function isTrueValidateCodeBy18IdCard(a_idCard) &#123;   </div><div class="line">    var sum = 0;                             // 声明加权求和变量   </div><div class="line">    if (a_idCard[17].toLowerCase() == &apos;x&apos;) &#123;   </div><div class="line">        a_idCard[17] = 10;                    // 将最后位为x的验证码替换为10方便后续操作   </div><div class="line">    &#125;   </div><div class="line">    for ( var i = 0; i &lt; 17; i++) &#123;   </div><div class="line">        sum += Wi[i] * a_idCard[i];            // 加权求和   </div><div class="line">    &#125;   </div><div class="line">    valCodePosition = sum % 11;                // 得到验证码所位置   </div><div class="line">    if (a_idCard[17] == ValideCode[valCodePosition]) &#123;   </div><div class="line">        return true;   </div><div class="line">    &#125; else &#123;   </div><div class="line">        return false;   </div><div class="line">    &#125;   </div><div class="line">&#125;   </div><div class="line">/**  </div><div class="line">  * 验证18位数身份证号码中的生日是否是有效生日  </div><div class="line">  * @param idCard 18位书身份证字符串  </div><div class="line">  * @return  </div><div class="line">  */  </div><div class="line">function isValidityBrithBy18IdCard(idCard18)&#123;   </div><div class="line">    var year =  idCard18.substring(6,10);   </div><div class="line">    var month = idCard18.substring(10,12);   </div><div class="line">    var day = idCard18.substring(12,14);   </div><div class="line">    var temp_date = new Date(year,parseFloat(month)-1,parseFloat(day));   </div><div class="line">    // 这里用getFullYear()获取年份，避免千年虫问题   </div><div class="line">    if(temp_date.getFullYear()!=parseFloat(year)   </div><div class="line">          ||temp_date.getMonth()!=parseFloat(month)-1   </div><div class="line">          ||temp_date.getDate()!=parseFloat(day))&#123;   </div><div class="line">            return false;   </div><div class="line">    &#125;else&#123;   </div><div class="line">        return true;   </div><div class="line">    &#125;   </div><div class="line">&#125;   </div><div class="line">  /**  </div><div class="line">   * 验证15位数身份证号码中的生日是否是有效生日  </div><div class="line">   * @param idCard15 15位书身份证字符串  </div><div class="line">   * @return  </div><div class="line">   */  </div><div class="line">  function isValidityBrithBy15IdCard(idCard15)&#123;   </div><div class="line">      var year =  idCard15.substring(6,8);   </div><div class="line">      var month = idCard15.substring(8,10);   </div><div class="line">      var day = idCard15.substring(10,12);   </div><div class="line">      var temp_date = new Date(year,parseFloat(month)-1,parseFloat(day));   </div><div class="line">      // 对于老身份证中的你年龄则不需考虑千年虫问题而使用getYear()方法   </div><div class="line">      if(temp_date.getYear()!=parseFloat(year)   </div><div class="line">              ||temp_date.getMonth()!=parseFloat(month)-1   </div><div class="line">              ||temp_date.getDate()!=parseFloat(day))&#123;   </div><div class="line">                return false;   </div><div class="line">        &#125;else&#123;   </div><div class="line">            return true;   </div><div class="line">        &#125;   </div><div class="line">  &#125;   </div><div class="line">//去掉字符串头尾空格   </div><div class="line">function trim(str) &#123;   </div><div class="line">    return str.replace(/(^\s*)|(\s*$)/g, &quot;&quot;);   </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="检查文件类型"><a href="#检查文件类型" class="headerlink" title="检查文件类型"></a>检查文件类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 检查文件类型</div><div class="line"> * @param ths file对象</div><div class="line"> * @return 是否符合规格</div><div class="line"> */</div><div class="line">function checkImgType(ths) &#123;</div><div class="line">try &#123;</div><div class="line">var obj_file = $(ths).get(0).files;</div><div class="line">for(var i=0;i&lt;obj_file.length;i++)&#123;</div><div class="line">if (!/\.(JPEG|BMP|GIF|JPG|PNG)$/.test(obj_file[i].name.toUpperCase())) &#123;</div><div class="line">alert(&quot;仅支持JPG、GIF、PNG、JPEG、BMP格式&quot;);</div><div class="line">$(ths).val(&quot;&quot;);</div><div class="line">return false;</div><div class="line">         &#125;</div><div class="line">      &#125;</div><div class="line">   &#125; catch (e) &#123;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">return true;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="检查文件大小"><a href="#检查文件大小" class="headerlink" title="检查文件大小"></a>检查文件大小</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 检查文件大小</div><div class="line"> * @param ths file对象</div><div class="line"> * @param limitSize 限制大小(k)</div><div class="line"> * @return 是否符合规格 </div><div class="line"> */</div><div class="line">function checkImgSize(ths,limitSize)&#123;</div><div class="line">try &#123;</div><div class="line">var maxsize = limitSize*1024;</div><div class="line">var msgSize = limitSize+&quot;K&quot;;</div><div class="line">if(limitSize&gt;=1024)&#123;</div><div class="line">msgSize = limitSize/1024+&quot;M&quot;;</div><div class="line">       &#125;</div><div class="line">var errMsg = &quot;上传的图片不能超过&quot;+msgSize;</div><div class="line">var obj_file = $(ths).get(0).files;</div><div class="line"></div><div class="line">for(var i=0;i&lt;obj_file.length;i++)&#123;</div><div class="line">if(obj_file[i].size&gt;maxsize)&#123;</div><div class="line">alert(errMsg);</div><div class="line">$(ths).val(&quot;&quot;);</div><div class="line">return false;</div><div class="line">         &#125;</div><div class="line">      &#125;</div><div class="line">   &#125; catch (e) &#123;</div><div class="line"></div><div class="line">   &#125;</div><div class="line">return true;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="当手机注册用户时"><a href="#当手机注册用户时" class="headerlink" title="当手机注册用户时"></a>当手机注册用户时</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//提交</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">formSubmit</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	</div><div class="line">        <span class="keyword">var</span> postData=&#123;&#125;;<span class="keyword">var</span> flag = <span class="literal">true</span>;</div><div class="line">        </div><div class="line">        <span class="keyword">var</span> username = $(<span class="string">'input[name=username]'</span>).val();</div><div class="line">        </div><div class="line">        <span class="keyword">if</span>(checkPhone())&#123;<span class="comment">//验证手机</span></div><div class="line">        	postData[<span class="string">'mobile'</span>]=$(<span class="string">'input[name=mobile]'</span>).val();</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">        	flag = <span class="literal">false</span>;</div><div class="line">        	<span class="keyword">return</span>;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="keyword">if</span>(checkPassword())&#123;<span class="comment">//验证密码</span></div><div class="line">            postData[<span class="string">'password'</span>]=$(<span class="string">'input[name=password]'</span>).val();</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">        	flag = <span class="literal">false</span>;</div><div class="line">        	<span class="keyword">return</span>;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        postData[<span class="string">'mobileCode'</span>] = $(<span class="string">'input[name=mobile_code]'</span>).val();</div><div class="line">        </div><div class="line">        <span class="keyword">if</span>(flag)&#123;</div><div class="line">        	$.ajax(&#123;</div><div class="line">    			<span class="attr">url</span>:contextPath+<span class="string">"/userReg"</span>,</div><div class="line">    			<span class="attr">type</span>:<span class="string">'POST'</span>,</div><div class="line">    			<span class="attr">dataType</span>:<span class="string">'text'</span>,</div><div class="line">    			<span class="attr">data</span>:postData,</div><div class="line">    			<span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">resp</span>)</span>&#123;</div><div class="line">    				<span class="keyword">if</span>(resp==<span class="string">"success"</span>)&#123;</div><div class="line">    					<span class="built_in">window</span>.location.href=contextPath+<span class="string">"/userhome"</span>;</div><div class="line">    				&#125;<span class="keyword">else</span> <span class="keyword">if</span>(resp==<span class="string">"codeError"</span>)&#123;</div><div class="line">    					<span class="comment">//清空验证码</span></div><div class="line">    					$(<span class="string">'input[name=mobile_code]'</span>).val(<span class="string">""</span>);</div><div class="line">    					floatNotify.simple(<span class="string">'验证码错误'</span>);</div><div class="line">    				&#125;<span class="keyword">else</span>&#123;</div><div class="line">    					floatNotify.simple(<span class="string">'注册失败，请重试'</span>);</div><div class="line">    				&#125;</div><div class="line">    			&#125;</div><div class="line">    		&#125;);</div><div class="line">        &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**判断是否为空**/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isBlank</span>(<span class="params">_value</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(_value==<span class="literal">null</span> || _value==<span class="string">""</span> || _value==<span class="literal">undefined</span>)&#123;</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**检查是否为手机号码形式**/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPhone</span>(<span class="params">str</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> mobile = <span class="regexp">/^1\d&#123;10&#125;$/</span>;</div><div class="line">	<span class="keyword">return</span> mobile.test(str);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**检查手机号码是否存在**/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isPhoneExist</span>(<span class="params">phone</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> result = <span class="literal">true</span>;</div><div class="line">	$.ajax(&#123;</div><div class="line">			<span class="attr">url</span>: contextPath + <span class="string">"/isPhoneExist"</span>, </div><div class="line">			<span class="attr">data</span>: &#123;<span class="string">"phone"</span>:phone&#125;,</div><div class="line">			<span class="attr">type</span>:<span class="string">'post'</span>, </div><div class="line">			<span class="attr">async</span> : <span class="literal">false</span>, <span class="comment">//默认为true 异步   </span></div><div class="line">			dataType : <span class="string">'json'</span>, </div><div class="line">			<span class="attr">error</span>: <span class="function"><span class="keyword">function</span>(<span class="params">jqXHR, textStatus, errorThrown</span>) </span>&#123;</div><div class="line">				 <span class="comment">//console.log(textStatus, errorThrown);</span></div><div class="line">				&#125;,</div><div class="line">			<span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">retData</span>)</span>&#123;</div><div class="line">				<span class="keyword">if</span>(retData)&#123;</div><div class="line">					result = <span class="literal">false</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;);</div><div class="line">	<span class="keyword">return</span> result;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//方法，验证姓名</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkName</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> result=<span class="literal">true</span>;</div><div class="line">	<span class="keyword">var</span> username = $(<span class="string">'input[name=username]'</span>).val();</div><div class="line">	<span class="keyword">if</span>(isBlank(username))&#123;</div><div class="line">		floatNotify.simple(<span class="string">'请输入您的姓名'</span>);</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(username.length &lt; <span class="number">2</span>)&#123;</div><div class="line">		floatNotify.simple(<span class="string">'姓名长度不能少于2个字符'</span>);</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	&#125;<span class="keyword">else</span>&#123;</div><div class="line">	       $.ajax(&#123;</div><div class="line">				<span class="attr">url</span>: contextPath + <span class="string">"/isNickNameExist"</span>, </div><div class="line">				<span class="attr">data</span>: &#123;<span class="string">"nickName"</span>:username&#125;,</div><div class="line">				<span class="attr">type</span>:<span class="string">'post'</span>, </div><div class="line">				<span class="attr">async</span> : <span class="literal">false</span>, <span class="comment">//默认为true 异步   </span></div><div class="line">				error: <span class="function"><span class="keyword">function</span>(<span class="params">jqXHR, textStatus, errorThrown</span>) </span>&#123;</div><div class="line">			 		 <span class="comment">//console.log(textStatus, errorThrown);</span></div><div class="line">				&#125;,</div><div class="line">				<span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">retData</span>)</span>&#123;</div><div class="line">			 		<span class="keyword">if</span>(<span class="string">'true'</span> == retData)&#123;</div><div class="line">			 			floatNotify.simple(<span class="string">'姓名已经存在'</span>);</div><div class="line">			 			result=<span class="literal">false</span>;</div><div class="line">					&#125;</div><div class="line">				&#125;</div><div class="line">			&#125;);</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> result;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//方法，验证手机</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkPhone</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	</div><div class="line">	<span class="keyword">var</span> mobile = $(<span class="string">'input[name=mobile]'</span>).val();</div><div class="line">    </div><div class="line">    <span class="keyword">if</span>(isBlank(mobile))&#123;</div><div class="line">       floatNotify.simple(<span class="string">'请输入您的手机号码'</span>);</div><div class="line">       <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">if</span>(!isPhone(mobile))&#123;</div><div class="line">  	  floatNotify.simple(<span class="string">'请输入正确的手机形式'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">if</span>(!isPhoneExist(mobile))&#123;</div><div class="line">  	  floatNotify.simple(<span class="string">'该手机号码已存在！'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//方法，验证密码</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkPassword</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	</div><div class="line">	<span class="keyword">var</span> password = $(<span class="string">'input[name=password]'</span>).val();</div><div class="line">	</div><div class="line">	<span class="keyword">if</span>(isBlank(password))&#123;</div><div class="line">        floatNotify.simple(<span class="string">'密码不能为空！'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">     &#125;</div><div class="line">	</div><div class="line">	<span class="keyword">if</span>(password.length&lt;<span class="number">6</span>)&#123;</div><div class="line">        floatNotify.simple(<span class="string">'密码长度不能小于6个字符！'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">	</div><div class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/** 倒计时函数 **/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">mycountDown</span>(<span class="params">obj,second</span>)</span>&#123;</div><div class="line"></div><div class="line">   <span class="comment">// 如果秒数还是大于0，则表示倒计时还没结束</span></div><div class="line">   <span class="keyword">if</span>(second&gt;=<span class="number">0</span>)&#123;</div><div class="line">       </div><div class="line">       <span class="comment">// 按钮置为不可点击状态</span></div><div class="line">       $(obj).attr(<span class="string">'disabled'</span>, <span class="literal">true</span>);</div><div class="line">       </div><div class="line">       <span class="comment">// 按钮里的内容呈现倒计时状态</span></div><div class="line">       $(obj).val(<span class="string">"发送短信中"</span>+<span class="string">'('</span>+second+<span class="string">')'</span>);</div><div class="line">       </div><div class="line">       <span class="comment">// 时间减一</span></div><div class="line">       second--;</div><div class="line">       </div><div class="line">       <span class="comment">// 一秒后重复执行</span></div><div class="line">       setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;mycountDown(obj,second);&#125;,<span class="number">1000</span>);</div><div class="line">   </div><div class="line">   &#125;<span class="keyword">else</span>&#123;<span class="comment">// 否则，按钮重置为初始状态</span></div><div class="line">   	</div><div class="line">       <span class="comment">// 按钮置未可点击状态</span></div><div class="line">       $(obj).attr(<span class="string">'disabled'</span>, <span class="literal">false</span>);</div><div class="line">       <span class="comment">// 按钮里的内容恢复初始状态</span></div><div class="line">       $(obj).val(<span class="string">"获取手机验证码"</span>);</div><div class="line">   &#125;</div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/** 倒计时函数 **/</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bindingMycountDown</span>(<span class="params">obj,second</span>)</span>&#123;</div><div class="line"></div><div class="line">   <span class="comment">// 如果秒数还是大于0，则表示倒计时还没结束</span></div><div class="line">   <span class="keyword">if</span>(second&gt;=<span class="number">0</span>)&#123;</div><div class="line">       </div><div class="line">       <span class="comment">// 按钮置为不可点击状态</span></div><div class="line">       $(obj).attr(<span class="string">'disabled'</span>, <span class="literal">true</span>);</div><div class="line">       </div><div class="line">       <span class="comment">// 按钮里的内容呈现倒计时状态</span></div><div class="line">       $(obj).html(<span class="string">"发送短信中"</span>+<span class="string">'('</span>+second+<span class="string">')'</span>);</div><div class="line">       </div><div class="line">       <span class="comment">// 时间减一</span></div><div class="line">       second--;</div><div class="line">       </div><div class="line">       <span class="comment">// 一秒后重复执行</span></div><div class="line">       setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;bindingMycountDown(obj,second);&#125;,<span class="number">1000</span>);</div><div class="line">   </div><div class="line">   &#125;<span class="keyword">else</span>&#123;<span class="comment">// 否则，按钮重置为初始状态</span></div><div class="line">   	</div><div class="line">       <span class="comment">// 按钮置未可点击状态</span></div><div class="line">       $(obj).attr(<span class="string">'disabled'</span>, <span class="literal">false</span>);</div><div class="line">       <span class="comment">// 按钮里的内容恢复初始状态</span></div><div class="line">       $(obj).html(<span class="string">"获取手机验证码"</span>);</div><div class="line">   &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag">#笔记</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/16/Hexo-Next-添加菜单分类/" rel="next" title="Hexo+Next 添加菜单分类">
+                <i class="fa fa-chevron-left"></i> Hexo+Next 添加菜单分类
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
+      <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="2016/11/16/常用表单验证/" data-title="常用表单验证" data-url="http://yoursite.com/2016/11/16/常用表单验证/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"lannly"};
+        (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0] 
+           || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+        </script>
+      <!-- 多说公共JS代码 end -->
+
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img.png"
+               alt="lann Yu" />
+          <p class="site-author-name" itemprop="name">lann Yu</p>
+          <p class="site-description motion-element" itemprop="description">Walk steps step by step</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lannly" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/your-user-name" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/your-user-name" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://theme-next.iissnan.com/theme-settings.html" title="next主题配置" target="_blank">next主题配置</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断是否为空"><span class="nav-number">1.</span> <span class="nav-text">/判断是否为空/</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证邮箱"><span class="nav-number">2.</span> <span class="nav-text">/ 验证邮箱 /</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证手机"><span class="nav-number">3.</span> <span class="nav-text">验证手机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#身份证验证-idcardCheck-js"><span class="nav-number">4.</span> <span class="nav-text">身份证验证 //idcardCheck.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查文件类型"><span class="nav-number">5.</span> <span class="nav-text">检查文件类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查文件大小"><span class="nav-number">6.</span> <span class="nav-text">检查文件大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当手机注册用户时"><span class="nav-number">7.</span> <span class="nav-text">当手机注册用户时</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lann Yu</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i> 访问人数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i> 总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lannly"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

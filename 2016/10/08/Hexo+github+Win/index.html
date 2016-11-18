@@ -91,8 +91,10 @@
 <meta property="og:site_name" content="lann's Blog">
 <meta property="og:description" content="windows环境下搭建hexo+github博客">
 <meta property="og:image" content="http://yoursite.com/img/vendorsError.png">
+<meta property="og:image" content="http://ogtg6fa5t.bkt.clouddn.com/lib1.png">
+<meta property="og:image" content="http://ogtg6fa5t.bkt.clouddn.com/lib2.png">
 <meta property="og:image" content="http://yoursite.com/img/vendors.png">
-<meta property="og:updated_time" content="2016-11-11T07:29:56.751Z">
+<meta property="og:updated_time" content="2016-11-18T06:35:02.219Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+github+Windows">
 <meta name="twitter:description" content="windows环境下搭建hexo+github博客">
@@ -108,8 +110,8 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
-      author: '博主'
+      userId: '6346854473696019000',
+      author: '主编大人'
     }
   };
 </script>
@@ -386,8 +388,8 @@
 <hr>
 <h2 id="文章中插入网易云音乐"><a href="#文章中插入网易云音乐" class="headerlink" title="文章中插入网易云音乐"></a>文章中插入网易云音乐</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"http://music.163.com/outchain/player?type=2&amp;id=28947001&amp;auto=1&amp;height=66"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 如果只是加入单曲，只需要搜索歌曲，点开歌曲名，点击生成外链播放器，复制html代码（可以选择是否自动播放），将html代码无需任何修改放入markdown文章里就OK了。 --&gt;</span></div><div class="line"><span class="comment">&lt;!-- 如果想要加入歌单，就需要自己创建歌单，然后分享歌单，找到自己的分享动态，点进去可以看到有“生成外链播放器”这些字眼，其余操作就和上面一样了。不过，你的歌单有变化的话，这个外链的歌曲同样跟着变，这一点挺棒的。 --&gt;</span></div></pre></td></tr></table></figure>
 <hr>
-<h2 id="hexo填坑："><a href="#hexo填坑：" class="headerlink" title="hexo填坑："></a>hexo填坑：</h2><p>1.安装hexo关于git管理组件：hexo-delopyer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deplyer-git --save</div></pre></td></tr></table></figure></p>
-<p>2.hexo部署到线上出现问题，如下图<br>    <img src="/img/vendorsError.png" alt="mahua"><br>    解决办法：<br>    <img src="/img/vendors.png" alt="gg"></p>
+<h2 id="hexo填坑："><a href="#hexo填坑：" class="headerlink" title="hexo填坑："></a>hexo填坑：</h2><p>1.安装hexo关于git管理组件：hexo-delopyer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$ npm install hexo-deplyer-git --save</div></pre></td></tr></table></figure></p>
+<p>2.最近使用next主题站点打不开首页，出现白屏，报错信息如下图：<br>    <img src="/img/vendorsError.png" alt="mahua"><br>    解决办法：<br>    1.打开主题目录 hexo\themes\next\source\vendors ,将vendors文件夹名称改为 lib<br>    <img src="http://ogtg6fa5t.bkt.clouddn.com/lib1.png" alt="gg"><br>    2.打开主题配置文件 hexo\themes\next\ _config.yml ,找到 vendors,修改为： _internal: lib<br>    <img src="http://ogtg6fa5t.bkt.clouddn.com/lib2.png" alt="gg"><br>    说明：<img src="/img/vendors.png" alt="gg"></p>
 
       
     </div>
@@ -516,7 +518,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">17</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -533,7 +535,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

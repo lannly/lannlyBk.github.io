@@ -84,16 +84,37 @@
 
 
 
-<meta name="description" content="关于我 ~未完，待续">
+<meta name="description" content="关于我 ~未完，待续
+
+    (function(IM,STATE,SINCE){
+    var now = new Date();                        
+    var profile = {
+        &apos;姓名&apos;:&apos;lannYu&apos;,
+        // &apos;年龄&apos;:(now.getFullYear()-SINCE),
+        &apos;性别&apos;:&apos;女&apos;,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="lann's Blog">
-<meta property="og:description" content="关于我 ~未完，待续">
-<meta property="og:updated_time" content="2016-11-10T10:09:04.166Z">
+<meta property="og:description" content="关于我 ~未完，待续
+
+    (function(IM,STATE,SINCE){
+    var now = new Date();                        
+    var profile = {
+        &apos;姓名&apos;:&apos;lannYu&apos;,
+        // &apos;年龄&apos;:(now.getFullYear()-SINCE),
+        &apos;性别&apos;:&apos;女&apos;,">
+<meta property="og:updated_time" content="2016-11-18T02:57:12.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我 ~未完，待续">
+<meta name="twitter:description" content="关于我 ~未完，待续
+
+    (function(IM,STATE,SINCE){
+    var now = new Date();                        
+    var profile = {
+        &apos;姓名&apos;:&apos;lannYu&apos;,
+        // &apos;年龄&apos;:(now.getFullYear()-SINCE),
+        &apos;性别&apos;:&apos;女&apos;,">
 
 
 
@@ -105,8 +126,8 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
-      author: '博主'
+      userId: '6346854473696019000',
+      author: '主编大人'
     }
   };
 </script>
@@ -256,7 +277,45 @@
     
     
       <p>关于我 ~未完，待续</p>
-
+<script>
+    (function(IM,STATE,SINCE){
+    var now = new Date();                        
+    var profile = {
+        '姓名':'lannYu',
+        // '年龄':(now.getFullYear()-SINCE),
+        '性别':'女',
+        '标签':['狮子座','宅',' Front-end Developer'],
+        '喜欢':['移动互联网','前端','交互设计','深度学习','电影','美食...'],
+        '家乡':'湖北武汉'
+    };
+    var HH = function(data){
+        this.profile = profile;
+        var that = this;
+        this.Dream = '做自己喜欢做的事，和爱的人在一起...';
+        this.Words = '加油吧，你想要的，岁月终究会给你';
+        this.profile.昵称 = IM;
+        this.profile.状态 = STATE;
+        this.OwnDream = function(){
+            return that.profile.梦想 = that.Dream;
+        };
+        this.MostLikeWords = function(){
+            return that.profile.座右铭 = that.Words;
+        };
+        this.SelfIntro = function(){
+            for(tag in that.profile){
+                if('object' == typeof(that.profile[tag])){
+                    that.profile[tag] = that.profile[tag].join(', ');
+                }
+                console.log(tag+':',that.profile[tag]);
+            }
+        };
+    };
+    var me = new HH( );
+        me.OwnDream();
+        me.MostLikeWords();
+        me.SelfIntro();
+})('lann','努力赚钱，努力花钱......','2016')
+</script>
     
   </div>
 
@@ -266,29 +325,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
-      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
-      <!-- 多说评论框 end -->
-      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-      <script type="text/javascript">
-      var duoshuoQuery = {short_name:"lannly"};
-        (function() {
-          var ds = document.createElement('script');
-          ds.type = 'text/javascript';ds.async = true;
-          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-          ds.charset = 'UTF-8';
-          (document.getElementsByTagName('head')[0] 
-           || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-        </script>
-      <!-- 多说公共JS代码 end -->
-
-    
-  </div>
-
 
         </div>
         
@@ -320,7 +356,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">17</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -337,7 +373,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
