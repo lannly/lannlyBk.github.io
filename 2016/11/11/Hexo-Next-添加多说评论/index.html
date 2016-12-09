@@ -86,15 +86,15 @@
 
 <meta name="description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Next 添加多说评论">
+<meta property="og:title" content="Hexo+Next 多说评论">
 <meta property="og:url" content="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/index.html">
 <meta property="og:site_name" content="lann's Blog">
 <meta property="og:description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
 <meta property="og:image" content="http://yoursite.com/img/duoshuozhandian.png">
 <meta property="og:image" content="http://yoursite.com/img/duoshuo.png">
-<meta property="og:updated_time" content="2016-11-11T08:25:56.224Z">
+<meta property="og:updated_time" content="2016-11-21T05:37:30.071Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Next 添加多说评论">
+<meta name="twitter:title" content="Hexo+Next 多说评论">
 <meta name="twitter:description" content="Hexo默认使用的评论插件是Disqus,本文章主要是讲解Next主题添加多说。首先进入多说官网注册账号（找了好久也没看到注册页，直接用QQ登录了），登录之后进入“http://duoshuo.com/create-site”创建站点……">
 <meta name="twitter:image" content="http://yoursite.com/img/duoshuozhandian.png">
 
@@ -109,7 +109,7 @@
     motion: true,
     duoshuo: {
       userId: '6346854473696019000',
-      author: '主编大人'
+      author: '主上'
     }
   };
 </script>
@@ -120,7 +120,7 @@
   <link rel="canonical" href="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"/>
 
 
-  <title> Hexo+Next 添加多说评论 | lann's Blog </title>
+  <title> Hexo+Next 多说评论 | lann's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -270,7 +270,7 @@
             
             
               
-                Hexo+Next 添加多说评论
+                Hexo+Next 多说评论
               
             
           </h1>
@@ -350,6 +350,8 @@
 </li>
 </ol>
 <p><code>上面两段的不同即为下图中的红色区域，替换即可</code><br><img src="/img/duoshuo.png" alt="创建站点"></p>
+<hr>
+<h3 id="如何关闭新建页面的评论功能？"><a href="#如何关闭新建页面的评论功能？" class="headerlink" title="如何关闭新建页面的评论功能？"></a>如何关闭新建页面的评论功能？</h3><p>当集成了评论系统，如 多说 或者 Disqus，所有新建的页面都将自动开启评论。若你不需要评论，比如标签页，请在页面的 Front-matter 里添加 comments 字段，并将值设置为 false。如下所示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: All tags</div><div class="line">date: 2016-11-11 17:05:24</div><div class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></div><div class="line">comments: <span class="literal">false</span></div><div class="line">---</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -421,7 +423,7 @@
     
       <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
       <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="2016/11/11/Hexo-Next-添加多说评论/" data-title="Hexo+Next 添加多说评论" data-url="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"></div>
+      <div class="ds-thread" data-thread-key="2016/11/11/Hexo-Next-添加多说评论/" data-title="Hexo+Next 多说评论" data-url="http://yoursite.com/2016/11/11/Hexo-Next-添加多说评论/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
       <script type="text/javascript">
@@ -480,7 +482,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">18</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -569,7 +571,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何关闭新建页面的评论功能？"><span class="nav-number">1.</span> <span class="nav-text">如何关闭新建页面的评论功能？</span></a></li></ol></div>
             
           </div>
         </section>

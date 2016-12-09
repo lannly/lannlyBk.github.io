@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/10/28/移动端常见问题及解决方案/index.html">
 <meta property="og:site_name" content="lann's Blog">
 <meta property="og:description" content="以下是移动端常用到的css，包括：常用css代码串,常用meta,media判断多终端,横竖屏,清楚浏览器默认样式等等,随时更新补充~">
-<meta property="og:updated_time" content="2016-11-18T07:24:46.151Z">
+<meta property="og:updated_time" content="2016-11-18T07:47:41.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端常见问题及解决方案">
 <meta name="twitter:description" content="以下是移动端常用到的css，包括：常用css代码串,常用meta,media判断多终端,横竖屏,清楚浏览器默认样式等等,随时更新补充~">
@@ -106,7 +106,7 @@
     motion: true,
     duoshuo: {
       userId: '6346854473696019000',
-      author: '主编大人'
+      author: '主上'
     }
   };
 </script>
@@ -438,15 +438,15 @@
 <li><p>min-height: 最小高度兼容代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.minheight500&#123;min-height:500px;height:auto !important;height:500px;overflow:visible;&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>显示省略号</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 单行显示省略号 --&gt;</div><div class="line">.ellipsis&#123;white-space:nowrap;overflow:hidden;text-overflow:ellipsis&#125;</div></pre></td></tr></table></figure>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 多行显示省略号 --&gt;</div><div class="line">.ui-nowrap-multi &#123;</div><div class="line">	display: -webkit-box;</div><div class="line">	overflow: hidden;</div><div class="line">	text-overflow: ellipsis;</div><div class="line">	-webkit-box-orient: vertical;</div><div class="line">	-webkit-line-clamp: 2;//默认两行</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
 <li><p>变灰</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">html&#123;</div><div class="line">    filter: grayscale(100%);</div><div class="line">    -webkit-filter: grayscale(100%);</div><div class="line">    -moz-filter: grayscale(100%);</div><div class="line">    -ms-filter: grayscale(100%);</div><div class="line">    -o-filter: grayscale(100%);</div><div class="line">    filter: url("data:image/svg+xml;utf8,<span class="tag">&lt;<span class="name">svg</span> <span class="attr">xmlns</span>=<span class="string">\</span>'<span class="attr">http:</span>//<span class="attr">www.w3.org</span>/<span class="attr">2000</span>/<span class="attr">svg</span>\'&gt;</span><span class="tag">&lt;<span class="name">filter</span> <span class="attr">id</span>=<span class="string">\</span>'<span class="attr">grayscale</span>\'&gt;</span><span class="tag">&lt;<span class="name">feColorMatrix</span> <span class="attr">type</span>=<span class="string">\</span>'<span class="attr">matrix</span>\' <span class="attr">values</span>=<span class="string">\</span>'<span class="attr">0.3333</span> <span class="attr">0.3333</span> <span class="attr">0.3333</span> <span class="attr">0</span> <span class="attr">0</span> <span class="attr">0.3333</span> <span class="attr">0.3333</span> <span class="attr">0.3333</span> <span class="attr">0</span> <span class="attr">0</span> <span class="attr">0.3333</span> <span class="attr">0.3333</span> <span class="attr">0.3333</span> <span class="attr">0</span> <span class="attr">0</span> <span class="attr">0</span> <span class="attr">0</span> <span class="attr">0</span> <span class="attr">1</span> <span class="attr">0</span>\'/&gt;</span><span class="tag">&lt;/<span class="name">filter</span>&gt;</span><span class="tag">&lt;/<span class="name">svg</span>&gt;</span>#grayscale");</div><div class="line">    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);</div><div class="line">    -webkit-filter: grayscale(1);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>待续~</p>
-</li>
+</ul>
+<hr>
+<h3 id="常用css"><a href="#常用css" class="headerlink" title="常用css"></a>常用css</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 强制换行 */</span></div><div class="line"><span class="selector-class">.toWrap</span>&#123;</div><div class="line">    <span class="attribute">word-break</span>: break-all;       <span class="comment">/* 只对英文起作用，以字母作为换行依据。 */</span></div><div class="line">    <span class="attribute">word-wrap</span>: break-word;       <span class="comment">/* 只对英文起作用，以单词作为换行依据。*/</span></div><div class="line">    <span class="attribute">white-space</span>: pre-wrap;     <span class="comment">/* 只对中文起作用，强制换行。*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">/*单行显示省略号*/</div><div class="line">.ellipsis&#123;</div><div class="line">	width:100%;</div><div class="line">	white-space:nowrap;</div><div class="line">	overflow:hidden;</div><div class="line">	text-overflow:ellipsis;</div><div class="line">	&#125;</div><div class="line">/*多行显示省略号*/</div><div class="line">.ui-nowrap-multi &#123;</div><div class="line">	display: -webkit-box;</div><div class="line">	overflow: hidden;</div><div class="line">	text-overflow: ellipsis;</div><div class="line">	-webkit-box-orient: vertical;</div><div class="line">	-webkit-line-clamp: 2;//默认两行</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>待续~</li>
 </ul>
 
       
@@ -580,7 +580,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">18</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -669,7 +669,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Head语义："><span class="nav-number">1.</span> <span class="nav-text">Head语义：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用html"><span class="nav-number">2.</span> <span class="nav-text">常用html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#audio元素和video元素在ios和andriod中无法自动播放"><span class="nav-number">3.</span> <span class="nav-text">audio元素和video元素在ios和andriod中无法自动播放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#播放视频不全屏"><span class="nav-number">4.</span> <span class="nav-text">播放视频不全屏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判断横屏竖屏"><span class="nav-number">5.</span> <span class="nav-text">判断横屏竖屏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判断多终端"><span class="nav-number">6.</span> <span class="nav-text">判断多终端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS判断微信浏览器"><span class="nav-number">7.</span> <span class="nav-text">JS判断微信浏览器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js判断设备"><span class="nav-number">8.</span> <span class="nav-text">js判断设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js判断ios-android"><span class="nav-number">9.</span> <span class="nav-text">js判断ios/android</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS，Safari浏览器，input等表单focus后fixed元素错位问题"><span class="nav-number">10.</span> <span class="nav-text">iOS，Safari浏览器，input等表单focus后fixed元素错位问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清楚默认样式及各种填坑"><span class="nav-number">11.</span> <span class="nav-text">清楚默认样式及各种填坑</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Head语义："><span class="nav-number">1.</span> <span class="nav-text">Head语义：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用html"><span class="nav-number">2.</span> <span class="nav-text">常用html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#audio元素和video元素在ios和andriod中无法自动播放"><span class="nav-number">3.</span> <span class="nav-text">audio元素和video元素在ios和andriod中无法自动播放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#播放视频不全屏"><span class="nav-number">4.</span> <span class="nav-text">播放视频不全屏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判断横屏竖屏"><span class="nav-number">5.</span> <span class="nav-text">判断横屏竖屏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判断多终端"><span class="nav-number">6.</span> <span class="nav-text">判断多终端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS判断微信浏览器"><span class="nav-number">7.</span> <span class="nav-text">JS判断微信浏览器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js判断设备"><span class="nav-number">8.</span> <span class="nav-text">js判断设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js判断ios-android"><span class="nav-number">9.</span> <span class="nav-text">js判断ios/android</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS，Safari浏览器，input等表单focus后fixed元素错位问题"><span class="nav-number">10.</span> <span class="nav-text">iOS，Safari浏览器，input等表单focus后fixed元素错位问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清楚默认样式及各种填坑"><span class="nav-number">11.</span> <span class="nav-text">清楚默认样式及各种填坑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用css"><span class="nav-number">12.</span> <span class="nav-text">常用css</span></a></li></ol></div>
             
           </div>
         </section>
