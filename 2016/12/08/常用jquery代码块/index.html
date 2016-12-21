@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,next主题,菜单" />
+  <meta name="keywords" content="jQuery,jQuery" />
 
 
 
@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;">
+<meta name="description" content="下文是笔者记录一些常用的jquery代码块，日常搬砖积累~;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Next 添加菜单分类">
-<meta property="og:url" content="http://yoursite.com/2016/11/16/Hexo-Next-添加菜单分类/index.html">
+<meta property="og:title" content="常用jQuery代码块">
+<meta property="og:url" content="http://yoursite.com/2016/12/08/常用jquery代码块/index.html">
 <meta property="og:site_name" content="lann's Blog">
-<meta property="og:description" content="下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;">
-<meta property="og:image" content="http://yoursite.com/img/works.png">
-<meta property="og:image" content="http://yoursite.com/img/zhhans.png">
-<meta property="og:updated_time" content="2016-11-17T06:09:40.419Z">
+<meta property="og:description" content="下文是笔者记录一些常用的jquery代码块，日常搬砖积累~;">
+<meta property="og:updated_time" content="2016-12-21T08:22:08.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Next 添加菜单分类">
-<meta name="twitter:description" content="下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;">
-<meta name="twitter:image" content="http://yoursite.com/img/works.png">
+<meta name="twitter:title" content="常用jQuery代码块">
+<meta name="twitter:description" content="下文是笔者记录一些常用的jquery代码块，日常搬砖积累~;">
 
 
 
@@ -117,10 +114,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/16/Hexo-Next-添加菜单分类/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/08/常用jquery代码块/"/>
 
 
-  <title> Hexo+Next 添加菜单分类 | lann's Blog </title>
+  <title> 常用jQuery代码块 | lann's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +257,7 @@
             
             
               
-                Hexo+Next 添加菜单分类
+                常用jQuery代码块
               
             
           </h1>
@@ -272,8 +269,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-16T13:38:43+08:00" content="2016-11-16">
-              2016-11-16
+            <time itemprop="dateCreated" datetime="2016-12-08T09:36:01+08:00" content="2016-12-08">
+              2016-12-08
             </time>
           </span>
 
@@ -286,8 +283,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
+                  <a href="/categories/jQuery/" itemprop="url" rel="index">
+                    <span itemprop="name">jQuery</span>
                   </a>
                 </span>
 
@@ -302,8 +299,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/16/Hexo-Next-添加菜单分类/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/16/Hexo-Next-添加菜单分类/" itemprop="commentsCount"></span>
+                <a href="/2016/12/08/常用jquery代码块/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/08/常用jquery代码块/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -331,28 +328,14 @@
       
 
       
-        <p>下文是笔者记录在[Hexo+Next]添加菜单分类的一个过程;</p>
-<blockquote>
-<p>默认的有：首页，归档，分类，标签，关于, 但是next主题默认只显示了首页 归档和标签。</p>
-</blockquote>
-<h4 id="生成-关于我-默认已有的分类"><a href="#生成-关于我-默认已有的分类" class="headerlink" title="生成 关于我 (默认已有的分类)"></a>生成 关于我 (默认已有的分类)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"about"</span></div><div class="line">//在 hexo &gt; <span class="built_in">source</span> 文件夹中会出现一个about文件夹</div></pre></td></tr></table></figure>
-<h4 id="生成-分类-默认已有的分类"><a href="#生成-分类-默认已有的分类" class="headerlink" title="生成 分类 (默认已有的分类)"></a>生成 分类 (默认已有的分类)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"categories"</span></div></pre></td></tr></table></figure>
-<p>步骤：</p>
-<ol>
-<li>新建page: $ hexo new page “categories” ，在 hexo &gt; source 文件夹中会出现一个categories文件夹</li>
-<li>打开categories文件夹中的index.md页面，在头部添加 – type: “categories” （为了点击的时候链接生效）</li>
-<li>在hexo &gt; theme &gt; next &gt; _config.yml 中修改menu下的categorues,去掉前面井号注释。</li>
-</ol>
-<h4 id="生成-作品-默认没有此分类"><a href="#生成-作品-默认没有此分类" class="headerlink" title="生成 作品 (默认没有此分类)"></a>生成 作品 (默认没有此分类)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page <span class="string">"works"</span></div></pre></td></tr></table></figure>
-<p>步骤：</p>
-<ol>
-<li>新建page: $ hexo new page “works” ，在 hexo &gt; source 文件夹中会出现一个categories文件夹</li>
-<li>在hexo &gt; theme &gt; next &gt; _config.yml 中menu下添加       — works: /works  </li>
-<li>在hexo &gt; theme &gt; next &gt; _config.yml 中menu_icons下添加 —   works: book  (ps:2,3步骤如下图)<br><img src="/img/works.png" alt="添加菜单：作品"></li>
-<li>新添加的菜单需要翻译对应的汉字，打开 hexo　&gt; theme &gt; next &gt; languages &gt; zh-Hans.yml , 在menu下添加–  works: 作品,如下图：<br><img src="/img/zhhans.png" alt="添加菜单：作品中文翻译"></li>
-</ol>
-<p>That’s all~</p>
-
+        <h3 id="动态加载css"><a href="#动态加载css" class="headerlink" title="动态加载css"></a>动态加载css</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadCss</span>(<span class="params">url</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> link = <span class="built_in">document</span>.createElement(<span class="string">"link"</span>);</div><div class="line">	link.type = <span class="string">"text/css"</span>;</div><div class="line">	link.rel = <span class="string">"stylesheet"</span>;</div><div class="line">	link.href = url ;</div><div class="line">	<span class="keyword">var</span> head = <span class="built_in">document</span>.getElemensByTagName(<span class="string">"head"</span>)[<span class="number">0</span>];</div><div class="line">	head.appendChild(link);</div><div class="line">&#125;</div><div class="line">loadCss(<span class="string">"css/index.js"</span>);  <span class="comment">//需要时候调用 ，比如加载css文件夹下面的index.js</span></div></pre></td></tr></table></figure>
+<h3 id="动态加载js"><a href="#动态加载js" class="headerlink" title="动态加载js"></a>动态加载js</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadScript</span>(<span class="params">url</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</div><div class="line">	script.type = <span class="string">"text/javascript"</span>;</div><div class="line">	script.src = url ;</div><div class="line">	<span class="built_in">document</span>.body.appendChild(script);</div><div class="line">&#125;</div><div class="line">loadScript(<span class="string">"js/juqery.js"</span>);  <span class="comment">//需要时候调用 ，比如加载js文件夹下面的juqery.js</span></div></pre></td></tr></table></figure>
+<h3 id="特殊操作下，项目中同时引入这两个文件时，往往会有些冲突，应该加一句代码避免冲突"><a href="#特殊操作下，项目中同时引入这两个文件时，往往会有些冲突，应该加一句代码避免冲突" class="headerlink" title="特殊操作下，项目中同时引入这两个文件时，往往会有些冲突，应该加一句代码避免冲突"></a>特殊操作下，项目中同时引入这两个文件时，往往会有些冲突，应该加一句代码避免冲突</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/jquery-2.1.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined">jQuery.noConflict()</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/zepto.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="jQuery获取Select选择的Text和Value"><a href="#jQuery获取Select选择的Text和Value" class="headerlink" title="jQuery获取Select选择的Text和Value:"></a>jQuery获取Select选择的Text和Value:</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#select_id"</span>).change(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//code...&#125;);  //为Select添加事件，当选择其中一项时触发</span></div><div class="line"><span class="keyword">var</span> checkText=$(<span class="string">"#select_id"</span>).find(<span class="string">"option:selected"</span>).text();  <span class="comment">//获取Select选择的Text</span></div><div class="line"><span class="keyword">var</span> checkValue=$(<span class="string">"#select_id"</span>).val();   <span class="comment">//获取Select选择的Value</span></div><div class="line"><span class="keyword">var</span> checkIndex=$(<span class="string">"#select_id "</span>).get(<span class="number">0</span>).selectedIndex;   <span class="comment">//获取Select选择的索引值 </span></div><div class="line"><span class="keyword">var</span> maxIndex=$(<span class="string">"#select_id option:last"</span>).attr(<span class="string">"index"</span>);   <span class="comment">//获取Select最大的索引值</span></div></pre></td></tr></table></figure>
+<h3 id="jQuery设置Select选择的Text和Value"><a href="#jQuery设置Select选择的Text和Value" class="headerlink" title="jQuery设置Select选择的Text和Value:"></a>jQuery设置Select选择的Text和Value:</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#select_id "</span>).get(<span class="number">0</span>).selectedIndex=<span class="number">1</span>;   <span class="comment">//设置Select索引值为1的项选中</span></div><div class="line">$(<span class="string">"#select_id "</span>).val(<span class="number">4</span>);    <span class="comment">//设置Select的Value值为4的项选中 </span></div><div class="line">$(<span class="string">"#select_id option[text='jQuery']"</span>).attr(<span class="string">"selected"</span>, <span class="literal">true</span>);  <span class="comment">//设置Select的Text值为jQuery的项选中</span></div></pre></td></tr></table></figure>
+<h3 id="jQuery添加-删除Select的Option项："><a href="#jQuery添加-删除Select的Option项：" class="headerlink" title="jQuery添加/删除Select的Option项："></a>jQuery添加/删除Select的Option项：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#select_id"</span>).html(<span class="string">"&lt;option value='Value'&gt;Text&lt;/option&gt;"</span>);   <span class="comment">//为Select设置Option(下拉项) </span></div><div class="line">$(<span class="string">"#select_id"</span>).append(<span class="string">"&lt;option value='Value'&gt;Text&lt;/option&gt;"</span>); <span class="comment">//为Select追加一个Option(下拉项)</span></div><div class="line">$(<span class="string">"#select_id"</span>).prepend(<span class="string">"&lt;option value='0'&gt;请选择&lt;/option&gt;"</span>);  <span class="comment">//为Select插入一个Option(第一个位置) </span></div><div class="line">$(<span class="string">"#select_id option:last"</span>).remove();         <span class="comment">//删除Select中索引值最大Option(最后一个)</span></div><div class="line">$(<span class="string">"#select_id option[index='0']"</span>).remove();   <span class="comment">//删除Select中索引值为0的Option(第一个)</span></div><div class="line">$(<span class="string">"#select_id option[value='3']"</span>).remove();   <span class="comment">//删除Select中Value='3'的Option</span></div><div class="line">$(<span class="string">"#select_id option[text='4']"</span>).remove();    <span class="comment">//删除Select中Text='4'的Option</span></div></pre></td></tr></table></figure>
+<h3 id="jQuery清空Select"><a href="#jQuery清空Select" class="headerlink" title="jQuery清空Select:"></a>jQuery清空Select:</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#ddlRegType "</span>).empty();</div></pre></td></tr></table></figure>
+<h3 id="图片预加载"><a href="#图片预加载" class="headerlink" title="图片预加载"></a>图片预加载</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> jQuery.preloadImages = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</div><div class="line">            $(<span class="string">"&lt;img /&gt;"</span>).attr(<span class="string">'src'</span>, <span class="built_in">arguments</span>[i]);</div><div class="line">        &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">$.preloadImages(<span class="string">'image1.gif'</span>, <span class="string">'/path/to/image2.png'</span>, <span class="string">'some/image3.jpg'</span>); <span class="comment">//用法 存储图片地址</span></div></pre></td></tr></table></figure>
       
     </div>
 
@@ -374,9 +357,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/jQuery/" rel="tag">#jQuery</a>
           
-            <a href="/tags/菜单/" rel="tag">#菜单</a>
+            <a href="/tags/代码块/" rel="tag">#代码块</a>
           
         </div>
       
@@ -385,16 +368,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/11/Hexo-Next-添加多说评论/" rel="next" title="Hexo+Next 多说评论">
-                <i class="fa fa-chevron-left"></i> Hexo+Next 多说评论
+              <a href="/2016/11/16/常用表单验证/" rel="next" title="常用表单验证">
+                <i class="fa fa-chevron-left"></i> 常用表单验证
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/16/常用表单验证/" rel="prev" title="常用表单验证">
-                常用表单验证 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/19/常用正则表达式/" rel="prev" title="常用正则表达式">
+                常用正则表达式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -423,7 +406,7 @@
     
       <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
       <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="2016/11/16/Hexo-Next-添加菜单分类/" data-title="Hexo+Next 添加菜单分类" data-url="http://yoursite.com/2016/11/16/Hexo-Next-添加菜单分类/"></div>
+      <div class="ds-thread" data-thread-key="2016/12/08/常用jquery代码块/" data-title="常用jQuery代码块" data-url="http://yoursite.com/2016/12/08/常用jquery代码块/"></div>
       <!-- 多说评论框 end -->
       <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
       <script type="text/javascript">
@@ -571,7 +554,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成-关于我-默认已有的分类"><span class="nav-number">1.</span> <span class="nav-text">生成 关于我 (默认已有的分类)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成-分类-默认已有的分类"><span class="nav-number">2.</span> <span class="nav-text">生成 分类 (默认已有的分类)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成-作品-默认没有此分类"><span class="nav-number">3.</span> <span class="nav-text">生成 作品 (默认没有此分类)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#动态加载css"><span class="nav-number">1.</span> <span class="nav-text">动态加载css</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态加载js"><span class="nav-number">2.</span> <span class="nav-text">动态加载js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊操作下，项目中同时引入这两个文件时，往往会有些冲突，应该加一句代码避免冲突"><span class="nav-number">3.</span> <span class="nav-text">特殊操作下，项目中同时引入这两个文件时，往往会有些冲突，应该加一句代码避免冲突</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery获取Select选择的Text和Value"><span class="nav-number">4.</span> <span class="nav-text">jQuery获取Select选择的Text和Value:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery设置Select选择的Text和Value"><span class="nav-number">5.</span> <span class="nav-text">jQuery设置Select选择的Text和Value:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery添加-删除Select的Option项："><span class="nav-number">6.</span> <span class="nav-text">jQuery添加/删除Select的Option项：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery清空Select"><span class="nav-number">7.</span> <span class="nav-text">jQuery清空Select:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片预加载"><span class="nav-number">8.</span> <span class="nav-text">图片预加载</span></a></li></ol></div>
             
           </div>
         </section>
