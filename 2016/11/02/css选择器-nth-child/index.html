@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="css" />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="Walk steps step by step">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lann's Blog">
-<meta property="og:url" content="http://yoursite.com/tags/jQuery/index.html">
+<meta name="description" content="css选择特定的元素,比如选择大于7的 等等~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css选择器--- nth-child()">
+<meta property="og:url" content="http://yoursite.com/2016/11/02/css选择器-nth-child/index.html">
 <meta property="og:site_name" content="lann's Blog">
-<meta property="og:description" content="Walk steps step by step">
+<meta property="og:description" content="css选择特定的元素,比如选择大于7的 等等~">
+<meta property="og:updated_time" content="2017-02-16T06:13:38.965Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lann's Blog">
-<meta name="twitter:description" content="Walk steps step by step">
+<meta name="twitter:title" content="css选择器--- nth-child()">
+<meta name="twitter:description" content="css选择特定的元素,比如选择大于7的 等等~">
 
 
 
@@ -113,10 +114,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/jQuery/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/02/css选择器-nth-child/"/>
 
 
-  <title> 标签: jQuery | lann's Blog </title>
+  <title> css选择器--- nth-child() | lann's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +138,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -235,46 +236,160 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        jQuery
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                css选择器--- nth-child()
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-02T20:23:10+08:00" content="2016-11-02">
+              2016-11-02
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/02/css选择器-nth-child/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/02/css选择器-nth-child/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-eye"></i> 浏览
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+      
+        <p>:first-child             第一个<br>:last-child         最后一个<br>:nth-of-type(2)           (顺数)第二个<br>:nth-last-of-type(2)           倒数第二个</p>
+<p>:nth-child(2n)选取偶数标签，2n也可以是even<br>:nth-child(2n-1)选取奇数标签，2n-1可以是odd<br>:nth-child(3n+1)自定义选取标签，3n+1表示“隔二取一”</p>
+<p>:nth-child(8)  选中第8个子元素<br>正方向范围   :nth-child(n+6)   选中从第6个开始的子元素    （大于6的标签 )<br>负方向范围   :nth-child(-n+9)  选中从第1个到第9个子元素  （小于9的标签 )<br>前后限制范围  :nth-child(n+4):nth-child(-n+8)  选中第4-8个子元素  （4~8之间的标签）</p>
+<p>nth-child(3n+1):nth-child(even)   间隔选择子元素<br>使用 :nth-child(3n+1) 我们可以每隔3个选中一个，也就是第 1, 4, 7 和 10 个子元素，但通过使用 :nth-child(even) 我们过滤掉了奇数位子元素，也就是 1 和 7，于是，剩下的子元素只有 4 和 10。</p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/12/08/常用jquery代码块/" itemprop="url">
-              
-                <span itemprop="name">常用jQuery代码块</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-08T09:36:01+08:00"
-              content="2016-12-08" >
-          12-08
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag">#css</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/02/常用css/" rel="next" title="常用css">
+                <i class="fa fa-chevron-left"></i> 常用css
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/03/常用js/" rel="prev" title="常用js">
+                常用js <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -282,6 +397,29 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <!--<div class="ds-thread" data-thread-key="请将此处替换成文章在你的站点中的ID" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>-->
+      <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="2016/11/02/css选择器-nth-child/" data-title="css选择器--- nth-child()" data-url="http://yoursite.com/2016/11/02/css选择器-nth-child/"></div>
+      <!-- 多说评论框 end -->
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"lannly"};
+        (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0] 
+           || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+        </script>
+      <!-- 多说公共JS代码 end -->
+
+    
+  </div>
+
 
         </div>
         
@@ -301,8 +439,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/img.png"
@@ -395,6 +542,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -507,6 +665,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
